@@ -1,38 +1,126 @@
-.App {
-  text-align: center;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.main{
+  width: 100%;
+  height: 100vh;
+  background: gray;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+}
+.center-div{
+  width: 25%;
+  height: 80vh;
+  background-color: aliceblue;
+  box-shadow: 5px 5px 25px -5px rgba(0,0,0, 0.5);
+  border-radius: 15px;
+ 
+  
+}
+h1{
+  margin-top: 20px;
+  padding:  10px 5px;
+  margin-bottom: 10px;
+  letter-spacing: 2px;
+  background-color:rgb(4, 72, 49);
+  box-shadow: 5px 5px 15px -5px rgba(0,0,0, 0.3);
   color: white;
 }
+input{
+  text-align: center;
+  height: 30px;
+  top: 50px;
+  border: none;
+  background: transparent;
+  font-size: 20px;
+  font-weight: 500;
+  width: 60%;
+  border-bottom: 2px solid rgb(6, 89, 61);
+  outline: none;
 
-.App-link {
-  color: #61dafb;
+  
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+button{
+  min-height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background-color: rgb(4, 83, 56);
+  color: white;
+  font-size:30px ;
+  border: none;
+  outline: none;
+  margin-left: 10px;
+  box-shadow: 5px 5px 15px -5px rgba(0,0,0, 0.3);
+
+}
+
+button:hover{
+  background-color: crimson;
+}
+ol{
+  margin-top: 30px;
+}
+ol li{
+  text-align: left;
+  font-size: 20px;
+  font-weight: 500;
+  min-height: 40px;
+  display: flex;
+  align-items: center;
+  color: rgb(3, 56, 38);
+  text-transform: capitalize;
+}
+
+.todo-style{
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+.todo-style .fa-times{
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  margin-left: 40px;
+  align-items: center;
+  background-color: rgb(19, 123, 89);
+  border-radius: 50%;
+  margin:0 15px 0 35px;
+  color: azure;
+  box-shadow: 5px 5px 15px -5px rgba(0,0,0, 0.5);
+ 
+}
+
+.todo-style .fa-times:hover{
+  background-color: crimson;
+}
+@media (max-width:786px){
+  .center-div{
+    width: 55%;
   }
-  to {
-    transform: rotate(360deg);
+  .todo-style .fa-times{
+    margin: 0 15px 0 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+  button{
+    margin-left: 5px;
+    min-height: 40px;
+    color: #fff;
+    font-size: 30px;
   }
 }
+
+
+
+
+
